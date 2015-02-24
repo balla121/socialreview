@@ -28,6 +28,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
+    acts_as_commentable (4.0.2)
     addressable (2.3.7)
     ansi (1.4.3)
     arel (5.0.1.20140414130214)
@@ -352,6 +353,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  acts_as_commentable
   bcrypt (~> 3.1.10)
   bootstrap-sass (= 3.2.0.0)
   bootstrap-will_paginate (~> 0.0.10)
