@@ -7,6 +7,7 @@ gem 'faker', '~> 1.4.3'
 gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.0.4'
 gem 'fog', '~> 1.27.0'
+gem "fog-aws"
 gem 'will_paginate', '~> 3.0.7'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'sass-rails', '~> 4.0.3'
@@ -16,6 +17,7 @@ gem 'le', '~> 2.6.2'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 gem "figaro"
 gem 'acts_as_commentable'
+gem 'capistrano', '~> 3.3.0'
 
 
 
