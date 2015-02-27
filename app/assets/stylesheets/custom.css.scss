@@ -255,11 +255,21 @@ input {
   }
 }
 
+.category-field {
+  float: right;
+  width: 30%;
+}
+
 /* microposts */
 
 .microposts {
+  background-color: #fff;
   list-style: none;
-  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+
   li {
     padding: 10px 0;
     border-top: 1px solid #e8e8e8;
@@ -267,6 +277,14 @@ input {
   .user {
     margin-top: 5em;
     padding-top: 0;
+  }
+  .icon {
+    float: right;
+    margin-right: 10px;
+    margin-top: 5px;
+  }
+  .star-rating {
+    position: relative;
   }
   .content {
     display: block;
@@ -300,6 +318,9 @@ span.picture {
   input {
     border: 0;
   }
+
+
+
 }
 
 /* icons */
@@ -323,3 +344,4 @@ span.picture {
 #index-body {
   background-image:url('../app/assets/images/photograph.jpg')
 }
+

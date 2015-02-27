@@ -1,7 +1,16 @@
 <%= form_for(@micropost, html: { multipart: true }) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
+  <p>
+    Category:
+    <span class="category-field">
+      <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+    </span>
+  </p>
   <div class="field">
-    <%= f.text_area :content, placeholder: "Compose new micropost..." %>
+    <%= f.text_field :subject, placeholder: "Enter a subject" %>
+  </div>
+  <div class="field">
+    <%= f.text_area :content, placeholder: "Create a message/review..." %>
   </div>
   <div class="field">
     <div id="star-rating"></div>
@@ -25,9 +34,8 @@ $('#micropost_picture').bind('change', function() {
   $('#star-rating').raty({
     path:'/assets/',
     scoreName: 'micropost[rating]',
-
-
-
+    score: 5,
+    hints: ["Terrible", "Bad", "Average", "Good", "Amazing!"]
   });
 
 </script>
