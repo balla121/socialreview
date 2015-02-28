@@ -1,11 +1,9 @@
 <%= form_for(@micropost, html: { multipart: true }) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
-  <p>
-    Category:
-    <span class="category-field">
-      <%= f.collection_select(:category_id, Category.all, :id, :name) %>
-    </span>
-  </p>
+  Category:
+  <div class="category-field">
+    <%= f.collection_select(:category_id, Category.order('name ASC').all, :id, :name, :include_blank => true) %>
+  </div>
   <div class="field">
     <%= f.text_field :subject, placeholder: "Enter a subject" %>
   </div>
