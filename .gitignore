@@ -17,3 +17,6 @@
 
 # Ignore application configuration
 /config/application.yml
+
+# .gitignore
+/config/initializers/app_environment_variables.rb

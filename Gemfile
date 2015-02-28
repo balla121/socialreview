@@ -17,8 +17,6 @@ gem 'le', '~> 2.6.2'
 gem 'font-awesome-rails', '~> 4.3.0.0'
 gem "figaro"
 gem 'acts_as_commentable'
-gem 'capistrano', '~> 3.3.0'
-
 
 
 gem 'jquery-rails'
@@ -52,7 +50,5 @@ group :production do
   gem 'pg',             '0.17.1'
   gem 'rails_12factor', '0.0.2'
   gem 'puma', '~> 2.11.1'
-
-
 end
 

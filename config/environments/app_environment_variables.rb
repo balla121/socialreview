@@ -1,0 +1,3 @@
+ENV['S3_ACCESS_KEY'] = "AKIAJAHPAYORCFQQQHQQ"
+ENV['S3_SECRET_KEY'] = "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"
+ENV['S3_BUCKET'] = "weijiesampleapp"
