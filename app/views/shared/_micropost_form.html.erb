@@ -32,7 +32,9 @@ $('#micropost_picture').bind('change', function() {
 
 <script>
   $('#star-rating').raty({
-    path:'/assets/',
+    starOn: '<%= image_path('star-on.png') %>',
+    starOff: '<%= image_path('star-off.png') %>',
+    path:'',
     scoreName: 'micropost[rating]',
     score: 5,
     hints: ["Terrible", "Bad", "Average", "Good", "Amazing!"]
