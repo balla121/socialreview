@@ -4,7 +4,6 @@ ruby '2.0.0'
 gem 'rails', '4.1.8'
 gem 'bcrypt', '~> 3.1.10'
 gem 'faker', '~> 1.4.3'
-gem 'carrierwave', '~> 0.10.0'
 gem 'mini_magick', '~> 4.0.4'
 gem 'fog', '~> 1.27.0'
 gem "fog-aws"
