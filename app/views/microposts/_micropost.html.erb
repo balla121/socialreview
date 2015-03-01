@@ -11,7 +11,6 @@
   </span>
   <span class="content">
     <%= micropost.content %>
-
   </span>
   <span>
     <div class="star-rating" data-score= <%= micropost.rating %> ></div>
@@ -19,8 +18,16 @@
 
   <span class="timestamp">
     Posted <%= time_ago_in_words(micropost.created_at) %> ago.
+
+    <% if micropost.get_likes.size > 0 %>
+      <i class="fa fa-check-square"></i> <%= pluralize(micropost.get_likes.size, "user") %> like this.
+    <% end %>
+
+    <%= link_to "Like", like_micropost_path(micropost), class: 'vote', method: :put %>
+
+
     <% if current_user?(micropost.user) %>
-     <%= link_to "delete", micropost, method: :delete,
+        <%= link_to "delete", micropost, method: :delete,
      													data: { confirm: "You sure?"} %>
     <% end %>
   </span>

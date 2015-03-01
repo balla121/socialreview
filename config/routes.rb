@@ -24,6 +24,10 @@ Rails.application.routes.draw do
   resources :password_resets, only: [:new, :create, :edit, :update]
   resources :microposts, only: [:create, :destroy, :show] do
     resources :comment, only: [:create]
+    member do
+      put "like", to: "microposts#like"
+      put "dislike", to: "microposts#dislike"
+    end
   end
   resources :relationships, only: [:create, :destroy]
 end

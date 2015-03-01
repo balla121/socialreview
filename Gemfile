@@ -14,10 +14,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'le', '~> 2.6.2'
 gem 'font-awesome-rails', '~> 4.3.0.0'
-gem "figaro"
 gem 'acts_as_commentable'
-
-
+gem 'acts_as_votable'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
@@ -34,7 +32,6 @@ group :development, :test do
   gem 'spring',      '1.1.3'
   gem 'capybara', '~> 2.4.4'
   gem 'rspec-rails', '~> 3.2.0'
-  gem 'launchy'
 end
 
 group :test do
