@@ -20,15 +20,23 @@ class MicropostsController < ApplicationController
 	end
 
 	def like
+		session[:return_to] ||= request.referer
 		@micropost = Micropost.find(params[:id])
 		@micropost.liked_by current_user
-		redirect_to root_path
+
+		if request.xhr?
+    	render json: { count: micropost.get_likes.size, id: params[:id] }
+  	else
+  		redirect_to session.delete(:return_to)
+  	end
+		#redirect_to session.delete(:return_to)
 	end
 
 	def dislike
+		session[:return_to] ||= request.referer
 		@micropost = Micropost.find(params[:id])
 		@micropost.disliked_by current_user
-		redirect_to root_path
+		redirect_to redirect_to session.delete(:return_to)
 	end
 
 	private
