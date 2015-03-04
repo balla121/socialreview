@@ -1,4 +1,5 @@
 class Comment < ActiveRecord::Base
+	validates :comment, presence: true
 
   include ActsAsCommentable::Comment
 
