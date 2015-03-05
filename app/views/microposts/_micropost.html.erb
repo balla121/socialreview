@@ -5,7 +5,7 @@
   <% if micropost.category %>
     <% if micropost.category.icon %>
 
-        <span class="icon"><i class="fa fa-<%=micropost.category.icon%>"></i></span>
+        <span class="icon" data-toggle="tooltip" data-placement="top" title="<%=micropost.category.name %>"><i class="fa fa-<%=micropost.category.icon%>"></i></span>
 
     <% end %>
   <% end %>
@@ -57,7 +57,11 @@
     <% end %>
   </span>
 
+
   <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
     $('.star-rating').raty({
         starOn: '<%= image_path('star-on.png') %>',
         starOff: '<%= image_path('star-off.png') %>',
