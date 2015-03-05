@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+	
+	include Tire::Model::Search
+  include Tire::Model::Callbacks
 	has_many :comments, dependent: :destroy
 	has_many :microposts, dependent: :destroy
 	has_many :active_relationships, class_name: "Relationship",
@@ -104,6 +107,12 @@ class User < ActiveRecord::Base
 
 	def following?(other_user)
 		following.include?(other_user)
+	end
+
+	def self.search(params)
+  	tire.search(load: true) do
+    	query { string params[:query] } if params[:query].present?
+  	end
 	end
 
 	private

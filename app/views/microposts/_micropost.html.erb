@@ -4,7 +4,9 @@
   <span class="user"><%= link_to micropost.user.name, micropost.user %></span>
   <% if micropost.category %>
     <% if micropost.category.icon %>
-      <span class="icon"><i class="fa fa-<%=micropost.category.icon%>"></i></span>
+
+        <span class="icon"><i class="fa fa-<%=micropost.category.icon%>"></i></span>
+
     <% end %>
   <% end %>
   <span class="subject">

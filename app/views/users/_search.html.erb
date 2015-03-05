@@ -1,0 +1,8 @@
+<%= form_tag users_path, method: :get do %>
+  <p>
+    <div class="textbox">
+    	<%= text_field_tag :query, params[:query], :placeholder => "Enter a name..." %>
+    	<%= submit_tag "Search", name: nil %>
+		</div>
+  </p>
+<% end %>

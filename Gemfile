@@ -20,7 +20,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
-
+gem 'tire', '~> 0.6.2'
 gem 'bootstrap-sass',       '3.2.0.0'
 gem 'nokogiri', '~> 1.6.6.2'
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
@@ -32,6 +32,7 @@ group :development, :test do
   gem 'spring',      '1.1.3'
   gem 'capybara', '~> 2.4.4'
   gem 'rspec-rails', '~> 3.2.0'
+  gem 'factory_girl', '~> 4.5.0'
 end
 
 group :test do
