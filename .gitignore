@@ -20,3 +20,7 @@
 
 # .gitignore
 /config/initializers/app_environment_variables.rb
+
+# zeus
+/custom_plan.rb
+/zeus.json

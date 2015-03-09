@@ -32,7 +32,7 @@ group :development, :test do
   gem 'spring',      '1.1.3'
   gem 'capybara', '~> 2.4.4'
   gem 'rspec-rails', '~> 3.2.0'
-  gem 'factory_girl', '~> 4.5.0'
+  gem 'factory_girl_rails'
 end
 
 group :test do

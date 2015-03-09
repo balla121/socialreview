@@ -1,0 +1,31 @@
+[2015-03-07 21:20:49,510][INFO ][node                     ] [Arides] {0.20.6}[4852]: stopping ...
+[2015-03-07 21:20:49,581][INFO ][node                     ] [Arides] {0.20.6}[4852]: stopped
+[2015-03-07 21:20:49,581][INFO ][node                     ] [Arides] {0.20.6}[4852]: closing ...
+[2015-03-07 21:20:49,591][INFO ][node                     ] [Arides] {0.20.6}[4852]: closed
+[2015-03-07 21:20:52,294][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: initializing ...
+[2015-03-07 21:20:52,302][INFO ][plugins                  ] [David Cannon] loaded [], sites []
+[2015-03-07 21:20:54,687][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: initialized
+[2015-03-07 21:20:54,687][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: starting ...
+[2015-03-07 21:20:54,817][INFO ][transport                ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.18:9300]}
+[2015-03-07 21:20:57,888][INFO ][cluster.service          ] [David Cannon] new_master [David Cannon][9w2QUo21TXSlT_xe7w94hA][inet[/192.168.1.18:9300]], reason: zen-disco-join (elected_as_master)
+[2015-03-07 21:20:58,002][INFO ][discovery                ] [David Cannon] elasticsearch/9w2QUo21TXSlT_xe7w94hA
+[2015-03-07 21:20:58,017][INFO ][http                     ] [David Cannon] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.18:9200]}
+[2015-03-07 21:20:58,018][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: started
+[2015-03-07 21:20:59,261][INFO ][gateway                  ] [David Cannon] recovered [1] indices into cluster_state
+[2015-03-07 21:21:08,565][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: stopping ...
+[2015-03-07 21:21:08,621][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: stopped
+[2015-03-07 21:21:08,621][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: closing ...
+[2015-03-07 21:21:08,629][INFO ][node                     ] [David Cannon] {0.20.6}[7276]: closed
+[2015-03-07 21:21:17,566][INFO ][node                     ] [Cyber] {0.20.6}[7290]: initializing ...
+[2015-03-07 21:21:17,573][INFO ][plugins                  ] [Cyber] loaded [], sites []
+[2015-03-07 21:21:20,015][INFO ][node                     ] [Cyber] {0.20.6}[7290]: initialized
+[2015-03-07 21:21:20,015][INFO ][node                     ] [Cyber] {0.20.6}[7290]: starting ...
+[2015-03-07 21:21:20,181][INFO ][transport                ] [Cyber] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.18:9300]}
+[2015-03-07 21:21:23,248][INFO ][cluster.service          ] [Cyber] new_master [Cyber][Bqk49yqNT1G_NM0DvuheUQ][inet[/192.168.1.18:9300]], reason: zen-disco-join (elected_as_master)
+[2015-03-07 21:21:23,352][INFO ][discovery                ] [Cyber] elasticsearch/Bqk49yqNT1G_NM0DvuheUQ
+[2015-03-07 21:21:23,366][INFO ][http                     ] [Cyber] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.18:9200]}
+[2015-03-07 21:21:23,366][INFO ][node                     ] [Cyber] {0.20.6}[7290]: started
+[2015-03-07 21:21:23,971][INFO ][gateway                  ] [Cyber] recovered [1] indices into cluster_state
+[2015-03-07 21:29:36,225][INFO ][cluster.metadata         ] [Cyber] [users] deleting index
+[2015-03-07 21:29:36,349][INFO ][cluster.metadata         ] [Cyber] [users] creating index, cause [api], shards [5]/[1], mappings [user]
+[2015-03-07 21:29:36,618][INFO ][cluster.metadata         ] [Cyber] [users] update_mapping [user] (dynamic)
