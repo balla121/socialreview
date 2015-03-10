@@ -1,12 +1,10 @@
-[2015-03-05 14:24:23,058][INFO ][node                     ] [Arides] {0.20.6}[4852]: initializing ...
-[2015-03-05 14:24:23,064][INFO ][plugins                  ] [Arides] loaded [], sites []
-[2015-03-05 14:24:25,027][INFO ][node                     ] [Arides] {0.20.6}[4852]: initialized
-[2015-03-05 14:24:25,028][INFO ][node                     ] [Arides] {0.20.6}[4852]: starting ...
-[2015-03-05 14:24:25,128][INFO ][transport                ] [Arides] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.18:9300]}
-[2015-03-05 14:24:28,195][INFO ][cluster.service          ] [Arides] new_master [Arides][F4rseBWuQ---iecUrLKT7Q][inet[/192.168.1.18:9300]], reason: zen-disco-join (elected_as_master)
-[2015-03-05 14:24:28,315][INFO ][discovery                ] [Arides] elasticsearch/F4rseBWuQ---iecUrLKT7Q
-[2015-03-05 14:24:28,338][INFO ][http                     ] [Arides] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.18:9200]}
-[2015-03-05 14:24:28,338][INFO ][node                     ] [Arides] {0.20.6}[4852]: started
-[2015-03-05 14:24:28,390][INFO ][gateway                  ] [Arides] recovered [0] indices into cluster_state
-[2015-03-05 14:27:52,102][INFO ][cluster.metadata         ] [Arides] [users] creating index, cause [api], shards [5]/[1], mappings [user]
-[2015-03-05 14:27:52,623][INFO ][cluster.metadata         ] [Arides] [users] update_mapping [user] (dynamic)
+[2015-03-10 12:10:05,840][INFO ][node                     ] [Umbo] {0.20.6}[11988]: initializing ...
+[2015-03-10 12:10:05,846][INFO ][plugins                  ] [Umbo] loaded [], sites []
+[2015-03-10 12:10:07,973][INFO ][node                     ] [Umbo] {0.20.6}[11988]: initialized
+[2015-03-10 12:10:07,973][INFO ][node                     ] [Umbo] {0.20.6}[11988]: starting ...
+[2015-03-10 12:10:08,079][INFO ][transport                ] [Umbo] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/192.168.1.11:9300]}
+[2015-03-10 12:10:11,142][INFO ][cluster.service          ] [Umbo] new_master [Umbo][vvKqxrgfSHejMCR7tifynw][inet[/192.168.1.11:9300]], reason: zen-disco-join (elected_as_master)
+[2015-03-10 12:10:11,260][INFO ][discovery                ] [Umbo] elasticsearch/vvKqxrgfSHejMCR7tifynw
+[2015-03-10 12:10:11,274][INFO ][http                     ] [Umbo] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/192.168.1.11:9200]}
+[2015-03-10 12:10:11,275][INFO ][node                     ] [Umbo] {0.20.6}[11988]: started
+[2015-03-10 12:10:11,802][INFO ][gateway                  ] [Umbo] recovered [1] indices into cluster_state

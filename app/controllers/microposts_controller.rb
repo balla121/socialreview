@@ -4,6 +4,11 @@ class MicropostsController < ApplicationController
 
 	def create
 		@micropost = current_user.microposts.build(micropost_params)
+		@reviewed = Reviewed.find_or_create_by(:name => micropost_params[:subject])
+		@reviewed.category_id ||= micropost_params[:category_id]
+		@reviewed.save
+		@micropost.reviewed_id = @reviewed.id
+		@micropost.save
 		if @micropost.save
 			flash[:success] = "Review created!"
 			redirect_to root_url

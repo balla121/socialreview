@@ -5,8 +5,8 @@ RSpec.describe Micropost, :type => :model do
   describe "Microposts#like" do
     describe "when a user likes a micropost" do
       it "changes the likes count" do
-        @user = User.create!(name: "Andy", email: "email@email.com", password: "password" )
-        @micropost = Micropost.create!(content: "stuff", user_id: @user.id, rating: 5, subject: "stuff")
+        @user = create(:user)
+        @micropost = create(:micropost)
         @micropost.liked_by @user
         expect(@micropost.votes_for.size).to eq(1)
       end

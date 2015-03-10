@@ -1,0 +1,45 @@
+<% provide(:title, @reviewed.name) %>
+<div class= "container">
+<div class="row">
+	<aside class="col-md-4">
+		<section class="reviewed_info">
+			<h1>
+				<%= @reviewed.name %><br><br>
+			</h1>
+			<% if @reviewed.category %>
+				<p>
+					<%= @reviewed.category.name %>
+					<i class="fa fa-<%= @reviewed.category.icon %>" ></i>
+				</p>
+			<% end %>
+			<p>Average Rating: <div class="star-rating" data-score= <%= @reviewed.average_rating.round %> ></div>(<%= @reviewed.average_rating %>)</p>
+		</section>
+		
+	</aside>
+</div>
+ <div class="col-md-8"> 
+    <% if @reviewed.microposts.any? %>
+      <h3>Reviews (<%= @reviewed.microposts.count %>)</h3>
+      <ol class="microposts">
+        <%= render @microposts %>
+      </ol>
+     
+    <% end %>
+  </div>
+</div>
+
+
+  <script>
+    
+    $('.star-rating').raty({
+        starOn: '<%= image_path('star-on.png') %>',
+        starOff: '<%= image_path('star-off.png') %>',
+        path: '',
+        readOnly: true,
+        
+
+        score: function(){
+            return $(this).attr('data-score');
+        }
+    });
+  </script>
