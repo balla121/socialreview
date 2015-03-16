@@ -18,6 +18,7 @@ gem 'acts_as_commentable'
 gem 'acts_as_votable'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'public_activity'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tire', '~> 0.6.2'

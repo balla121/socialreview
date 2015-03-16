@@ -1,0 +1,10 @@
+[2015-03-11 16:48:36,810][INFO ][node                     ] [Contessa] {0.20.6}[844]: initializing ...
+[2015-03-11 16:48:36,823][INFO ][plugins                  ] [Contessa] loaded [], sites []
+[2015-03-11 16:48:39,770][INFO ][node                     ] [Contessa] {0.20.6}[844]: initialized
+[2015-03-11 16:48:39,773][INFO ][node                     ] [Contessa] {0.20.6}[844]: starting ...
+[2015-03-11 16:48:39,916][INFO ][transport                ] [Contessa] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/172.31.99.57:9300]}
+[2015-03-11 16:48:43,129][INFO ][cluster.service          ] [Contessa] new_master [Contessa][9kpnUcM2QkqhWaWcghfOOw][inet[/172.31.99.57:9300]], reason: zen-disco-join (elected_as_master)
+[2015-03-11 16:48:43,459][INFO ][discovery                ] [Contessa] elasticsearch/9kpnUcM2QkqhWaWcghfOOw
+[2015-03-11 16:48:43,507][INFO ][http                     ] [Contessa] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/172.31.99.57:9200]}
+[2015-03-11 16:48:43,508][INFO ][node                     ] [Contessa] {0.20.6}[844]: started
+[2015-03-11 16:48:44,641][INFO ][gateway                  ] [Contessa] recovered [1] indices into cluster_state

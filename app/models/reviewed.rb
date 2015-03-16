@@ -10,4 +10,8 @@ class Reviewed < ActiveRecord::Base
   	average_rating = total_rating/self.microposts.count
   	return average_rating.round(2)
   end
+
+  def rating_count
+    self.microposts.count
+  end
 end

@@ -28,4 +28,10 @@ FactoryGirl.define do
     rating 5
     subject "micropost subject"
   end
+
+  factory :reviewed, class: Reviewed do
+    category_id nil
+    name "reviewed"
+
+  end
 end

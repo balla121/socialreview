@@ -9,7 +9,7 @@ class ReviewedsController < ApplicationController
   end
 
   def index
-
+    @revieweds = Reviewed.all
   end
 
   def destroy
